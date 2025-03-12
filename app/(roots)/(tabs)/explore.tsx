@@ -19,6 +19,7 @@ import {
   
   import { getProperties } from "@/lib/appwrite";
   import { useAppwrite } from "@/lib/useAppwrite";
+  import Video from '@/components/VideoScreen'
   
   const Explore = () => {
     const params = useLocalSearchParams<{ query?: string; filter?: string }>();
@@ -77,9 +78,9 @@ import {
               {/* Smart Health Metrics Section */}
               <View className="mt-5">
                 <Text className="text-xl font-rubik-bold text-black-300">
-                  Smart Health Metrics
+                  Guia respiración
                 </Text>
-                <Filters />
+                <Video />
               </View>
   
               {/* Start Therapy Section */}
