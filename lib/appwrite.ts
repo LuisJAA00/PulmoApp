@@ -22,6 +22,8 @@ import {
     agentsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID,
     propertiesCollectionId:
       process.env.EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID,
+    propertiesCollectionUsers2Id:
+      process.env.EXPO_PUBLIC_APPWRITE_USUARIOS2_COLLECTION_ID,
     bucketId: process.env.EXPO_PUBLIC_APPWRITE_BUCKET_ID,
   };
   
@@ -165,3 +167,39 @@ import {
       return null;
     }
   }
+
+  export async function addRowToDatabase(data: { email: string; content: string }) {
+    try {
+      const response = await databases.createDocument(
+        config.databaseId!,
+        config.propertiesCollectionUsers2Id!, // Reemplázalo con tu colección correcta
+        ID.unique(),
+        data
+      );
+      return response;
+    } catch (error) {
+      console.error("Error al agregar la fila:", error);
+      throw error;
+    }
+  }
+  
+
+  export async function getResultsForUser(email: string) {
+    try {
+      const result = await databases.listDocuments(
+        config.databaseId!,
+        config.propertiesCollectionUsers2Id!, // tu colección de resultados de pacientes
+        [
+          Query.equal("email", email),
+          Query.orderDesc("$createdAt") // ordena por fecha si quieres
+        ]
+      );
+  
+      return result.documents;
+    } catch (error) {
+      console.error("Error obteniendo resultados:", error);
+      return [];
+    }
+  }
+  
+  

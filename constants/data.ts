@@ -59,7 +59,7 @@ export const categories = [
   { title: "AI Predict", category: "AI Predict" }, // AI-powered health predictions
   { title: "History", category: "History" }, // View historical health data
   { title: "Recent", category: "Recent" }, // View recent health data
-  { title: "Trends", category: "Trends" }, // Health trends visualization
+  { title: "Resultados", category: "Resultados" }, // Health trends visualization
   { title: "Insights", category: "Insights" }, // AI-generated health insights
   { title: "Alerts", category: "Alerts" }, // Health alerts and notifications
   { title: "Checkup", category: "Checkup" }, // Quick health check

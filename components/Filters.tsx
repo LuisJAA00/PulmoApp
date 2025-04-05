@@ -21,6 +21,9 @@ const Filters = () => {
       case "Recent":
         router.push("/recent-study");
         return;
+      case "Resultados":
+        router.push("/mostrarRes");
+        return;
       default:
         if (selectedCategory === category) {
           setSelectedCategory("");
