@@ -66,6 +66,7 @@ Assuming approximately 15 breaths per minute (4 seconds per breath — 2 to inha
 
 For both the therapy and the lung volume measurements, the same animation can be reused during the normal breathing phases.
 
+![WhatsApp Image 2025-05-06 at 14 04 54](https://github.com/user-attachments/assets/0df994dd-ab12-4d82-bfda-f166711f2011)
 
 # The app
 
