@@ -66,7 +66,16 @@ Assuming approximately 15 breaths per minute (4 seconds per breath — 2 to inha
 
 For both the therapy and the lung volume measurements, the same animation can be reused during the normal breathing phases.
 
-![WhatsApp Image 2025-05-06 at 14 04 54](https://github.com/user-attachments/assets/0df994dd-ab12-4d82-bfda-f166711f2011)
 
 # The app
+After succsesfully loging in, the app shows the calendar with the next appointmes (info is downloaded from the cloud services).
 
+![WhatsApp Image 2025-05-06 at 14 04 54](https://github.com/user-attachments/assets/0df994dd-ab12-4d82-bfda-f166711f2011)
+
+User then has the options to see the video explaining the timing for the breathing excersices and the results stored on the cloud
+
+![WhatsApp ![Captura de pantalla_20250512_212004](https://github.com/user-attachments/assets/b965a16a-4598-4b3b-bd97-1859b5adaa23)
+Image 2025-05-06 at 14 05 27](https://github.com/user-attachments/assets/39f3e9b9-ee55-4f5e-ad62-8064faab6290)
+![WhatsApp Image 2025-05-06 at 14 10 10](https://github.com/user-attachments/assets/22e2ddf3-cac4-477a-9637-48167dbff545)
+![WhatsApp Image 2025-05-06 at 14 12 19](https://github.com/user-attachments/assets/ca4ce787-9d3f-46f6-8da1-f090eea4cb21)
+![WhatsApp Image 2025-05-06 at 14 12 44](https://github.com/user-attachments/assets/7139a46c-fbf6-46b7-9ca2-b518910dbb4c)
