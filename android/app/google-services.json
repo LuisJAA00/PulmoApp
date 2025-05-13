@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "105055264859",
+    "project_id": "auth3-1b808",
+    "storage_bucket": "auth3-1b808.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105055264859:android:76add949051ada930e1f7e",
+        "android_client_info": {
+          "package_name": "com.pulmo.auth3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrjiNb4FKuM1FCXy2OcklZY1tCrASHgtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
