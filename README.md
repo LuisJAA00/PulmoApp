@@ -43,3 +43,29 @@ real-time monitoring, and improve the management of
 healthcare resources. This digital transformation will
 modernize data systems, improving healthcare access and
 performance.
+
+# Therapy
+
+The therapy will last a total of 30 minutes, during which:
+
+    Every 2.5 minutes, there will be a progressive change in the motor vibrations (these changes do not affect how the patient is supposed to breathe).
+
+    Ideally, a countdown timer should be included so that the patient knows how much time remains in the session. It could also display calming messages like “Only 5 minutes left!” or “Almost done!” — anything to help keep the patient relaxed.
+
+To measure lung volumes:
+The patient's breaths (inhalations and exhalations) will be recorded for 1 minute before and 1 minute after the therapy (2 minutes total).
+Assuming approximately 15 breaths per minute (4 seconds per breath — 2 to inhale, 2 to exhale), the breathing pattern per minute would be:
+
+    5 normal breaths (20 seconds)
+
+    1 forced inhalation (10 seconds)
+
+    1 forced exhalation (10 seconds)
+
+    5 normal breaths (20 seconds)
+
+For both the therapy and the lung volume measurements, the same animation can be reused during the normal breathing phases.
+
+
+# The app
+
