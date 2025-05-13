@@ -1,50 +1,45 @@
-# Welcome to your Expo app 👋
+# Pulmo App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Our team developed a cross-platform application for respiratory health monitoring, built with React and Appwrite, aimed at enhancing the connection between personal patient tracking and medical evaluation.  
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Purpose 
+Our project seeks to create a system aimed at respiratoryproblems, specifically in the upper and lower respiratorytract. The main objective is to develop a therapeuticsystem that helps patients to recover their respiratorycapacity by means of high frequency vibrations. Inaddition, the system will record and store respiratoryvolumes, which will allow therapy to be carried out remotely, without the need for patients to visit healthcare
+centres. In addition to addressing health problems, our
+project will promote the integration of digital tools,
+medical records and information systems. With the
+development of this therapy device, we seek to
+specifically address issues arising from diseases such as
+asthma, chronic obstructive pulmonary disease (COPD)
+and the increasingly prevalent post-COVID-19
+complications. (Molina-Molina, 2020). Our project
+targets a wide range of patients, including elderly people
+with respiratory impairment. The design of our device,
+unlike others that work with percussions, allows elderly
+people to be candidates for this type of therapy, as it does
+not generate shocks to the rib cage. It can also be directed
+to patients recovering from respiratory infections,
+procedures that required intubation, and as mentioned
+before, patients with chronic respiratory diseases such as
+asthma, COPD or some form of pulmonary fibrosis. In
+addition to addressing health problems, our project will
+promote the integration of digital tools, medical records,
+and information systems. These systems will help to
+eliminate inequalities and structural barriers, such as
+gender differences, market segmentation, economic
+inequalities, etc. In terms of gender and market
+segmentation, we are looking for a design that can be
+adapted to the user's body depending on their physical
+characteristics. Likewise, this device could even be used
+by athletes or professionals who are exposed to
+continuous respiratory stress. People with limited access
+to healthcare, such as those in rural areas, who need
+remote treatment solutions. By providing an accessible,
+non-invasive, technology-driven solution, we aim to
+improve the quality of life of these people while reducing
+hospitalization rates.
+By ensuring a people-cantered approach, we aim to
+improve the effectiveness of health programs, enhance
+real-time monitoring, and improve the management of
+healthcare resources. This digital transformation will
+modernize data systems, improving healthcare access and
+performance.
