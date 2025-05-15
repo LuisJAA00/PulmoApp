@@ -12,11 +12,10 @@ import ImageView from "react-native-image-viewing";
 
 const screenWidth = Dimensions.get("window").width;
 
-const PatientResultCard = ({ date, grafica }) => {
+const PatientResultCard = ({ date, grafica, graficaIA }) => {
+  const [currentImage, setCurrentImage] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
   const [viewerKey, setViewerKey] = useState(0);
-  console.log("la fecha es")
-  console.log(date)
   const [chartLoaded, setChartLoaded] = useState(false);
   const [visible, setIsVisible] = useState(false);
   
@@ -30,10 +29,14 @@ const PatientResultCard = ({ date, grafica }) => {
     month: "short",
     day: "numeric",
   });
-  console.log(date)
-  console.log(formattedDate)
 
   const imageSource = { uri: `data:image/png;base64,${grafica}` };
+  const imageSourceIA = { uri: `data:image/png;base64,${graficaIA}` };
+
+  const openImageViewer = (img) => {
+    setCurrentImage(img);
+    setIsVisible(true);
+  };
 
   return (
     <>
@@ -51,42 +54,51 @@ const PatientResultCard = ({ date, grafica }) => {
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Text style={styles.modalDate}>{formattedDate}</Text>
+            
             {chartLoaded && (
-              <TouchableOpacity
-                style={styles.button}
-                onPress={() => setIsVisible(true)}
-              >
-                <Graficador base64String={grafica} />
-              </TouchableOpacity>
+              <View style={styles.modalBody}>
+                <TouchableOpacity
+                  style={styles.imageContainer}
+                  onPress={() => openImageViewer(imageSource)}
+                >
+                  <Graficador base64String={grafica} />
+                  <Text style={styles.imageLabel}>Gráfico Original</Text>
+                </TouchableOpacity>
+
+                <View style={styles.separator} />
+
+                <TouchableOpacity
+                  style={styles.imageContainer}
+                  onPress={() => openImageViewer(imageSourceIA)}
+                >
+                  <Graficador base64String={graficaIA} />
+                  <Text style={styles.imageLabel}>Gráfico IA</Text>
+                </TouchableOpacity>
+              </View>
             )}
+            
             <TouchableOpacity
               onPress={() => setModalVisible(false)}
               style={styles.closeButton}
             >
-              <Text style={{ color: "white" }}>Cerrar</Text>
+              <Text style={styles.closeButtonText}>Cerrar</Text>
             </TouchableOpacity>
-            
-
-
           </View>
+          
           {visible && (
-  <ImageView
-    key={viewerKey}
-    images={[imageSource]}
-    imageIndex={0}
-    visible={true}
-    onRequestClose={() => {
-      setIsVisible(false);
-      setViewerKey(prev => prev + 1);
-    }}
-  />
-)}
-
+            <ImageView
+              key={viewerKey}
+              images={[currentImage]}
+              imageIndex={0}
+              visible={true}
+              onRequestClose={() => {
+                setIsVisible(false);
+                setViewerKey(prev => prev + 1);
+              }}
+            />
+          )}
         </View>
       </Modal>
-
-      {/* Pantalla completa con zoom y swipe */}
-      
     </>
   );
 };
@@ -118,24 +130,52 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     padding: 20,
     width: "90%",
+    maxWidth: 400,
     alignItems: "center",
+  },
+  modalBody: {
+    width: "100%",
+    marginVertical: 15,
   },
   modalDate: {
     fontSize: 18,
     fontWeight: "bold",
-    marginBottom: 16,
+    marginBottom: 15,
     textAlign: "center",
   },
+  imageContainer: {
+    width: "100%",
+    marginBottom: 15,
+    alignItems: "center",
+  },
+  imageLabel: {
+    marginTop: 8,
+    fontSize: 14,
+    color: "#555",
+  },
+  separator: {
+    height: 1,
+    backgroundColor: "#eee",
+    marginVertical: 10,
+    width: "100%",
+  },
   closeButton: {
-    marginTop: 16,
+    marginTop: 10,
     backgroundColor: "#007bff",
-    paddingHorizontal: 20,
-    paddingVertical: 10,
+    paddingHorizontal: 25,
+    paddingVertical: 12,
     borderRadius: 6,
+    width: "100%",
+    alignItems: "center",
+  },
+  closeButtonText: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "500",
   },
   button: {
     width: screenWidth * 0.85,
-    height: screenWidth * 0.5,
+    height: screenWidth * 0.3,
   },
 });
 
